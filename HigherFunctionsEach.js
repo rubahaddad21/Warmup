@@ -6,8 +6,17 @@
         }
     }
 	function negativeAll(array) {
-	 //your code here
-	}
+		 var newarr=[];
+         each (array, function(element){
+
+              if(element <0){
+               element= - element;
+   }
+              newarr.push(element);
+   })
+                    return newarr;
+ }
+	 
 
 	/*
 	2) using improved each write function that multiply each element in array with
@@ -17,11 +26,21 @@
 		multiplyOfFour(x);  => [16, 64 , 256] 
     */
    
-    function each(array, func) {
+   function each(array, func) {
         for (var i = 0; i < array.length; i++) {
             func(array[i], i);
         }
     }
-	function multiplyOfFour(array) {
-	    //your code here
-	}
+    
+   function multiplyOfFour(array) {
+	    var newarr=[];
+         each (array, function(element){
+
+              if(element >0){
+               element= element*4;
+   }
+              newarr.push(element);
+   })
+                    return newarr;
+ }
+	 
